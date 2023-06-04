@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/sign.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script type="module" defer src="js/signup.js"></script>
+    <script type="module" defer src="toggle-element.js"></script>
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3396640, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a id="start" href="csmuseum.html">
+          <img
+            class="nav-logo"
+            src="images/community-science-museum-high-resolution-logo-color-on-transparent-background (2).png"
+            alt="Community Science Museum Logo"
+          />
+        </a>
+        <div class="menu" id="js-menu">
+          <ul class="nav-item">
+            <li><a class="nav-link n1" href="csmuseum.html#news">News</a></li>
+            <li>
+              <a class="nav-link n3" href="csmuseum.html#get-involved"
+                >Get involved</a
+              >
+            </li>
+            <li><a class="nav-link n4" href="visit.html#visit">Visit</a></li>
+            <li><a class="nav-link n5" href="visit.html#about">About</a></li>
+            <li><a class="nav-link n6" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="hamburger">
+          <button id="js-toggle-button" class="hamburger-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="person-icon">
+            <a href="login.html"><i class="fas fa-user"></i></a>
+          </div>
+          <a class="sign-in-2a" href="login.html"
+            ><div class="sign-in-2">Log In</div></a
+          >
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="home">
+        <p>
+          <a href="csmuseum.html"><i class="fas fa-arrow-left"></i></a>
+        </p>
+      </div>
+      <div>
+        <p><i class="fas fa-user"></i></p>
+      </div>
+      <div>
+        <h1>Sign Up</h1>
+      </div>
+
+      <div class="container">
+        <div class="element">
+          <div class="items">
+            <form>
+              <div class="input-group">
+                <label class="required" id="nameLabel" for="f-name"
+                  >Full Name</label
+                >
+                <input
+                  required
+                  id="name"
+                  class="input-box"
+                  type="text"
+                  placeholder="Bob Johnson"
+                />
+                <span id="nameSpan"></span>
+              </div>
+
+              <div class="input-group">
+                <label class="required" id="emailLabel" for="email"
+                  >Email</label
+                >
+                <input
+                  required
+                  id="email"
+                  class="input-box"
+                  type="email"
+                  placeholder="bob@gmail.com"
+                />
+                <span id="emailSpan"></span>
+              </div>
+
+              <div class="input-group">
+                <label class="required" id="passwordLabel" for="password"
+                  >Password</label
+                >
+                <input
+                  required
+                  id="password"
+                  title="Must have at least 8 characters"
+                  class="input-box"
+                  type="password"
+                  placeholder="Password"
+                />
+                <span id="passwordSpan"></span>
+              </div>
+
+              <div class="input-group">
+                <label
+                  class="required"
+                  id="confirmPassLabel"
+                  for="confirm-password"
+                  >Confirm password</label
+                >
+                <input
+                  id="confirmPassword"
+                  class="input-box"
+                  type="password"
+                  placeholder="Confirm Password"
+                />
+                <span id="confirmPasswordSpan"></span>
+              </div>
+
+              <div class="checkbox-">
+                <input class="check" type="checkbox" />
+                <label class="terms" for="checkbox"
+                  >I agree to the terms & Conditions.</label
+                >
+              </div>
+
+              <div class="input-group-3">
+                <button id="signUpBtn" class="sign-up-btn" disabled>
+                  Sign up
+                </button>
+                <p class="login-direct">
+                  Already have an account?
+                  <a class="login-link" href="login.html">Log in.</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="pop-up-confirmation" id="popUp">
+        <h4>Thanks for the registration!</h4>
+
+        <p>
+          Your account has been created and a verification has been sent to your
+          registered email address. Please click on the verification link
+          included in the email to activate your account.
+        </p>
+
+        <button id="returnToPage" onclick="window.open('csmuseum.html')">
+          Return to Home Page
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
