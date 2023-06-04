@@ -51,7 +51,7 @@ Contributions are welcome! If you have any suggestions, bug reports, or feature 
 
 If you have any questions, feedback, or inquiries about the Community Science Museum project, feel free to reach out to me.
 
-[Email](kgcdronio@gmail.com)
+[Email](mailto:kgcdronio@gmail.com)
 
 [KrystianGH2](https://github.com/KrystianGH2)
 
