@@ -1,0 +1,105 @@
+.background-image {
+  background-image: url(/images/william-bout-264826.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  isolation: isolate;
+}
+.background-image::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: black;
+  opacity: 0.8;
+}
+.logo {
+  width: 200px;
+  height: 120px;
+}
+.container-first-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 35%;
+  height: 500px;
+}
+.container-paragraph {
+  font-family: hinamincho-regular;
+  text-align: center;
+  color: var(--gray-0);
+  font-size: var(--font-size-4);
+  line-height: var(--font-lineheight-2);
+  margin: 0;
+  padding: 0px 10px 15px 10px;
+}
+[data-exploreBtn] {
+  width: 180px;
+  height: 45px;
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius: 20px;
+  font-size: var(--font-size-2);
+  margin: 20px;
+}
+.explore-link {
+  color: var(--gray-0);
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 0.15rem;
+}
+
+[data-exploreBtn]:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.347);
+  scale: 1.03;
+  transition: 0.3s ease-in-out;
+  border: 0 solid transparent;
+}
+[data-exploreBtn]:active {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.347);
+  scale: 1.03;
+  transition: 0.3s ease-in-out;
+  border: 0 solid transparent;
+}
+.explore-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: yellow;
+  transition: width 0.35s ease-out;
+}
+.explore-link:hover:before {
+  content: "";
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+.explore-link:active:before {
+  content: "";
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 250px;
+    height: 150px;
+    transition: all 0.4s ease-in-out;
+  }
+  .container-paragraph {
+    width: 730px;
+    transition: 0.4s ease-in-out;
+    font-size: var(--font-size-5);
+  }
+}
