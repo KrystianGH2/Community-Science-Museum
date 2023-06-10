@@ -8,7 +8,7 @@
 
 ## Description
 
-The Community Science Museum website aims to provide information about various scientific exhibits, interactive experiments, and educational programs for visitors. The website utilizes modern web development tools like Vite to deliver a fast and responsive user experience.
+The Community Science Museum website was my first semester project and it is built with HTML, CSS, JS and Vite
 
 ## Built With
 
