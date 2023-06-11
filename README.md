@@ -1,6 +1,6 @@
 # Community Science Museum
 
-![image](https://iili.io/H4KkhPe.jpg)
+![image](https://imgtr.ee/images/2023/06/11/KjFHJ.gif)
 
 [Deployment Site](https://communitysciencemuseum-kgc.netlify.app/)
 
